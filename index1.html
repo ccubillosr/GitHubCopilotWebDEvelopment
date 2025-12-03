@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio personal - Desarrollador Full Stack">
+    <meta name="author" content="Tu Nombre">
+    <title>Mi Portafolio | Desarrollador Full Stack</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <header role="banner">
+        <h1>Mi Portafolio Profesional</h1>
+        <p class="tagline">Desarrollador Full Stack | Creando soluciones web innovadoras</p>
+    </header>
+
+    <nav role="navigation" aria-label="Navegación principal">
+        <ul>
+            <li><a href="#about-me">Acerca de Mí</a></li>
+            <li><a href="#experience">Experiencia</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content" role="main">
+        <section id="about-me" aria-labelledby="about-heading">
+            <h2 id="about-heading">Acerca de Mí</h2>
+            <p>Desarrollador apasionado con experiencia en crear aplicaciones web modernas y accesibles.</p>
+        </section>
+
+        <section id="experience" aria-labelledby="experience-heading">
+            <h2 id="experience-heading">Experiencia</h2>
+            <article class="experience-item">
+                <h3>Desarrollador Full Stack</h3>
+                <p class="company">Empresa XYZ | 2022 - Presente</p>
+                <p>Desarrollo de aplicaciones web utilizando tecnologías modernas.</p>
+            </article>
+        </section>
+
+        <section id="skills" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Habilidades</h2>
+            <ul class="skills-list">
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>Python & Flask</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contacto</h2>
+            <p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
+            
+            <form id="contact-form" aria-label="Formulario de contacto" novalidate>
+                <div class="form-group">
+                    <label for="name" class="form-label">
+                        Nombre <span aria-label="obligatorio">*</span>
+                    </label>
+                    <input type="text" class="form-control" id="name" name="name" aria-required="true" required autocomplete="name">
+                    <span class="error-message" role="alert"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="form-label">
+                        Correo Electrónico <span aria-label="obligatorio">*</span>
+                    </label>
+                    <input type="email" class="form-control" id="email" name="email" aria-required="true" required autocomplete="email">
+                    <span class="error-message" role="alert"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message" class="form-label">
+                        Mensaje <span aria-label="obligatorio">*</span>
+                    </label>
+                    <textarea class="form-control" id="message" name="message" rows="4" aria-required="true" required></textarea>
+                    <span class="error-message" role="alert"></span>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; <span id="current-year">2024</span> Mi Portafolio. Todos los derechos reservados.</p>
+        <p>
+            <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer">GitHub</a> | 
+            <a href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
